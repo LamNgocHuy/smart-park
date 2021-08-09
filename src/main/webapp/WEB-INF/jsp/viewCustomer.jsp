@@ -16,18 +16,18 @@
 <div class="menu">
     <p class="menu-title">Parking</p>
     <div class="menu-group">
-        <div class="menu-item">
+        <a class="menu-item" href="/viewCustomer">
             <i class="fa fa-user" aria-hidden="true" style="color: #FFE81A"></i>
-            <a href="/viewCustomer" class="menu-link">Customer</a>
-        </div>
-        <div class="menu-item">
+            <span class="menu-link">Customer</span>
+        </a>
+        <a class="menu-item" href="/viewVehicle">
             <i class="fa fa-car" aria-hidden="true" style="color: #333"></i>
-            <a href="/viewVehicle" class="menu-link">Vehicle</a>
-        </div>
-        <div class="menu-item">
+            <span  class="menu-link">Vehicle</span>
+        </a>
+        <a class="menu-item" href="/viewParkingFee">
             <i class="fa fa-money" aria-hidden="true" style="color: #2BEE86"></i>
-            <a href="/viewParkingFee" class="menu-link">Parking Fee</a>
-        </div>
+            <span class="menu-link">Parking Fee</span>
+        </a>
     </div>
 </div>
 <div class="content">
@@ -39,8 +39,8 @@
     <table id="example" class="table table-hover table-bordered w-100">
         <thead>
         <tr style="color: #333333;font-weight: bold;text-align: center">
-            <td>Name</td>
-            <td>Email</td>
+            <td class="text-left">Name</td>
+            <td class="text-left">Email</td>
             <td>Mobile</td>
             <td>Address</td>
             <td>Vehicle Number</td>

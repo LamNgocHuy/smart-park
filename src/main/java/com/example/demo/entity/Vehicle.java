@@ -13,6 +13,8 @@ public class Vehicle {
     private String vehicleType;
     @Column(name = "vehicle_num")
     private String vehicleNum;
+    @Column(name = "status", columnDefinition = "tinyint(1) default false")
+    private Boolean status = false;
     @OneToOne
     @JoinColumn(name = "vehicle_own_id")
     private Customer customer;
@@ -58,5 +60,13 @@ public class Vehicle {
 
     public void setParkingFee(ParkingFee parkingFee) {
         this.parkingFee = parkingFee;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 }

@@ -16,18 +16,18 @@
 <div class="menu">
     <p class="menu-title">Parking</p>
     <div class="menu-group">
-        <div class="menu-item">
+        <a class="menu-item" href="/viewCustomer">
             <i class="fa fa-user" aria-hidden="true" style="color: #FFE81A"></i>
-            <a href="/viewCustomer" class="menu-link">Customer</a>
-        </div>
-        <div class="menu-item">
+            <span class="menu-link">Customer</span>
+        </a>
+        <a class="menu-item" href="/viewVehicle">
             <i class="fa fa-car" aria-hidden="true" style="color: #333"></i>
-            <a href="/viewVehicle" class="menu-link">Vehicle</a>
-        </div>
-        <div class="menu-item">
+            <span  class="menu-link">Vehicle</span>
+        </a>
+        <a class="menu-item" href="/viewParkingFee">
             <i class="fa fa-money" aria-hidden="true" style="color: #2BEE86"></i>
-            <a href="/viewParkingFee" class="menu-link">Parking Fee</a>
-        </div>
+            <span class="menu-link">Parking Fee</span>
+        </a>
     </div>
 </div>
 <div class="content">
@@ -45,9 +45,9 @@
         </thead>
         <tbody>
         <c:forEach var="par" items="${parkingFeeList}">
-            <tr>
+            <tr class="text-center">
                 <td>${par.parkingFeeType}</td>
-                <td>${par.parkingFeeAmount}</td>
+                <td>${par.parkingFeeAmount} $</td>
                 <td>
                     <a href="/editVehicle?id=${veh.vehicleId}" class="btn btn-sm btn-outline-warning">Edit</a>
                     <a href="/deleteVehicle?id=${veh.vehicleId}" class="btn btn-sm btn-outline-danger">Delete</a>

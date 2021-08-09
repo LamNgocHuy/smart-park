@@ -16,11 +16,13 @@
     html,body{
         font-family: 'JetBrains Mono', sans-serif;
         font-size: 15px;
+        max-width: 100vw;
         line-height: 1.8;
         display: flex;
         background-color: #5E72E4;
         color: #777d74;
         user-select: none;
+        overflow: hidden;
     }
     .mycolor {
         background-color: #0dd6b8;
@@ -37,24 +39,28 @@
     }
     /*end pagnition style*/
     a{
-        text-decoration: none;
+        text-decoration: none !important;
         color: #333333;
+        outline: none !important;
     }
     .menu{
         width: 280px;
         height: 642px;
+        max-height: 90vh;
         background-color: white;
-        margin: 72px 51px 54px 64px;
+        margin: 40px;
         border-radius: 10px;
     }
     .content{
         width: 1070px;
         max-width: 1070px;
         height: 642px;
+        max-height: 90vh;
         align-items: center;
         background-color: white;
         border-radius: 10px;
-        margin: 72px 51px 54px 0px;
+        margin: 40px;
+        margin-left: 0;
         padding: 15px;
         overflow: auto;
     }
@@ -65,25 +71,21 @@
         margin: 38px 89px 47px 90px;
         text-align: center;
     }
-    .menu-link{
+    .menu-link {
         font-size: 14px;
         text-align: left;
-    }
-    .menu-link:hover{
-        font-size: 16px;
-        color: black;
-        text-decoration: none;
     }
     .menu-item{
         width: 250px;
         height: 55px;
         display: inline-block;
-        margin: 5px 15px 21px 15px;
-        padding: 12px 0 10px 0;
+        margin: 5px 15px 15px 15px;
+        padding: 12px 0 10px 5px;
         border-radius: 8px;
     }
     .menu-item:hover{
         background-color: #F6F9FC;
+        color: #333;
     }
     .menu-item > i{
         width: 20px;
@@ -92,8 +94,9 @@
         margin-right: 10px;
     }
     table > tbody > tr > td {
-        font-size: 14px;
+        font-size: 13px;
         color: #525F7F;
+        vertical-align: middle !important;
     }
     .content-title{
         max-width: 100%;
